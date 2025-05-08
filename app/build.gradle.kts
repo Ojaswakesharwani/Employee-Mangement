@@ -53,7 +53,15 @@ dependencies {
 
 
     //Navigation
-
     implementation("androidx.navigation:navigation-fragment:2.9.0")
     implementation("androidx.navigation:navigation-ui:2.9.0")
+
+    //Retrofit
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    //Live data
+    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.9.0")
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.9.0")
+
 }

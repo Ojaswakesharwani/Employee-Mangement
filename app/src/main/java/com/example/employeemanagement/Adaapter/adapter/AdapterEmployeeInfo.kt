@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.employeemanagement.Adaapter.model.EmplyeeInfo
+import com.example.employeemanagement.R
 import com.example.employeemanagement.databinding.ItemEmployeeInfoBinding
 
 class AdapterEmployeeInfo:ListAdapter<EmplyeeInfo,AdapterEmployeeInfo.EmployeeViewHolder>(EmployeeDiffCallback()) {
@@ -29,7 +30,7 @@ class AdapterEmployeeInfo:ListAdapter<EmplyeeInfo,AdapterEmployeeInfo.EmployeeVi
             binding.name.text = employee.name
             binding.salary.text = "Salary${employee.salary}"
             binding.age.text = "Age: ${employee.age}"
-            binding.avatar.setImageResource(employee.profile) // You may want to use Glide/Picasso here
+            binding.avatar.setImageResource(R.drawable.dummy_img) // You may want to use Glide/Picasso here
         }
     }
 
