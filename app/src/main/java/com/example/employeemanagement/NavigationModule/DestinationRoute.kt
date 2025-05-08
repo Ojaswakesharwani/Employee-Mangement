@@ -1,4 +1,4 @@
-package com.example.employeemanagement.Restrofit
+package com.example.employeemanagement.NavigationModule
 
 sealed class DestinationRoute(val route: String) {
 

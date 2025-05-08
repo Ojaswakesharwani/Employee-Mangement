@@ -10,7 +10,7 @@ import androidx.navigation.NavGraph
 import androidx.navigation.createGraph
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.fragment
-import com.example.employeemanagement.Restrofit.DestinationRoute
+import com.example.employeemanagement.NavigationModule.DestinationRoute
 import com.example.employeemanagement.fragment.DestinationFragment
 import com.example.employeemanagement.fragment.GetAllEmpFragment
 

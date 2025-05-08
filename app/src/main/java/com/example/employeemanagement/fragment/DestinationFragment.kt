@@ -5,18 +5,31 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.employeemanagement.R
+import androidx.navigation.fragment.findNavController
+import com.example.employeemanagement.NavigationModule.DestinationRoute
+import com.example.employeemanagement.databinding.FragmentDestinationBinding
 
 
 class DestinationFragment : Fragment() {
 
+    private var _binding: FragmentDestinationBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_destination, container, false)
+    ): View {
+        _binding = FragmentDestinationBinding.inflate(layoutInflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnGetAllEmp.setOnClickListener {
+            findNavController().navigate(DestinationRoute.GetAllEmp.route)
+        }
+
     }
 
 }
